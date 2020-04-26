@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="@style/VectorToolbarStyle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip">
+        <TextView android:id="@id/verification_instruction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/settings_phone_number_verification_instruction" />
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="?vctr_default_text_hint_color" android:id="@id/phone_number_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/verification_instruction">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="?vctr_riot_primary_text_color" android:id="@id/phone_number_code_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_phone_number_code" android:maxLines="1" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ProgressBar android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </RelativeLayout>
+</LinearLayout>

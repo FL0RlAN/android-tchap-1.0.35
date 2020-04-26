@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="40.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip">
+        <ImageView android:id="@id/adapter_member_details_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/vector_create_direct_room" />
+        <RelativeLayout android:id="@id/room_avatar_layout" android:layout_width="40.0dip" android:layout_height="32.0dip">
+            <im.vector.view.VectorCircularImageView android:id="@id/room_avatar_image_view" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" />
+            <fr.gouv.tchap.util.HexagonMaskView android:id="@id/hexagon_mask_view" android:background="@color/vector_tchap_hexagon_background_color_dark_grey" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/room_avatar_direct_chat_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="24.0dip" android:src="@drawable/icon_person" android:layout_alignLeft="@id/room_avatar_image_view" android:layout_alignTop="@id/room_avatar_image_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:layout_gravity="center_vertical" android:id="@id/adapter_member_details_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" />
+</LinearLayout>

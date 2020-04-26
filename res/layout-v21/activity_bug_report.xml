@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bug_report_body_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:id="@id/bug_report_progress_text_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/send_bug_report_progress" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/bug_report_progress_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="100" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:progressTint="@color/vector_green_color" style="?android:progressBarStyleHorizontal" />
+        <ScrollView android:id="@id/bug_report_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/send_bug_report_description" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <com.google.android.material.textfield.TextInputLayout android:textColorHint="?vctr_default_text_hint_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                    <com.google.android.material.textfield.TextInputEditText android:textColor="?vctr_riot_primary_text_color" android:id="@id/bug_report_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:hint="@string/send_bug_report_placeholder" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:textSize="12.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/send_bug_report_description_in_english" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/send_bug_report_logs_description" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:id="@id/bug_report_button_include_logs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/send_bug_report_include_logs" android:layout_marginStart="10.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:id="@id/bug_report_button_include_crash_logs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/send_bug_report_include_crash_logs" android:layout_marginStart="10.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:id="@id/bug_report_button_include_screenshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/send_bug_report_include_screenshot" android:layout_marginStart="10.0dip" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/bug_report_screenshot_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="260.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <View android:id="@id/bug_report_mask_view" android:background="@android:color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

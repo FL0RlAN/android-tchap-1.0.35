@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/room_details_head" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/room_toolbar" android:layout_width="match_parent" android:layout_height="72dp" android:layout_alignParentTop="true" app:contentInsetEnd="0dp" app:contentInsetStart="0dp" style="@style/TchapRoomToolbarStyle">
+            <include layout="@layout/tchap_room_action_bar_custo_layout"/>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/room_toolbar" app:tabGravity="0" app:tabIndicatorColor="@color/tchap_text_color_light" app:tabIndicatorHeight="3.8dp" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="@color/tchap_text_color_light" app:tabTextAppearance="@style/Vector.RoomToolbar.Title" app:tabTextColor="@color/tchap_text_color_light_with_alpha">
+            <com.google.android.material.tabs.TabItem android:gravity="center" android:id="@+id/tab_item_people" android:tag="people" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/room_details_people"/>
+            <com.google.android.material.tabs.TabItem android:gravity="center" android:id="@+id/tab_item_files" android:tag="files" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/room_details_files"/>
+            <com.google.android.material.tabs.TabItem android:gravity="center" android:id="@+id/tab_item_details" android:tag="settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/room_details_settings"/>
+        </com.google.android.material.tabs.TabLayout>
+        <View android:id="@+id/header_bottom_separator" android:background="?attr/room_header_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/tab_layout" android:layout_alignParentLeft="true"/>
+        <FrameLayout android:id="@+id/settings_loading_layout" android:background="?attr/vctr_waiting_background_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/header_bottom_separator">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/loading_settings_progress_bar" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp"/>
+        </FrameLayout>
+        <ProgressBar android:id="@+id/search_load_oldest_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:indeterminate="true" android:layout_below="@+id/settings_loading_layout" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        <FrameLayout android:id="@+id/room_details_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_load_oldest_progress"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/vector_invite_members_layout" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/search_view_external" android:background="@drawable/tchap_search_bar_style" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="10.0dip" style="@style/VectorToolbarStyle">
+        <androidx.appcompat.widget.SearchView android:id="@id/external_search_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" android:textAlignment="center" />
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:id="@id/ly_invite_contacts_by_email" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="24.0dip" android:layout_below="@id/search_view_external">
+        <ImageView android:id="@id/icon_add_contacts_by_email" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/tchap_ic_add_bymail" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/tchap_text_color_light" android:id="@id/tv_invite_contacts_by_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="@string/tchap_invite_contacts_by_email" android:layout_toRightOf="@id/icon_add_contacts_by_email" />
+    </RelativeLayout>
+    <ExpandableListView android:id="@id/room_details_members_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="1.0px" android:layout_below="@id/ly_invite_contacts_by_email" />
+    <FrameLayout android:id="@id/search_progress_view" android:background="?vctr_waiting_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/listView_spinner" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    </FrameLayout>
+</RelativeLayout>

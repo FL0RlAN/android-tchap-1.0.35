@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/filtered_list_actions" android:background="@color/vector_fuchsia_color" android:layout_width="55.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/filtered_list_delete_action" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_material_eject_white" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/filtered_list_cell" android:background="?vctr_riot_primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+            <RelativeLayout android:id="@id/ly_user_infos" android:layout_width="300.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <FrameLayout android:id="@id/ly_icon_check_invite" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="7.0dip" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/icon_check_invite_member" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/tchap_ic_selected_contact" />
+                </FrameLayout>
+                <im.vector.view.VectorCircularImageView android:id="@id/filtered_list_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_toRightOf="@id/ly_icon_check_invite" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/filtered_list_avatar_badge" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="-7.0dip" android:layout_marginRight="-7.0dip" android:src="@drawable/admin_icon" android:layout_alignTop="@id/filtered_list_avatar" android:layout_alignRight="@id/filtered_list_avatar" />
+                <ImageView android:id="@id/filtered_list_online_status" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="-10.0dip" android:src="@drawable/tchap_presence_status_icon_style" android:layout_alignRight="@id/filtered_list_avatar" android:layout_alignBottom="@id/filtered_list_avatar" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/tchap_primary_text_color" android:ellipsize="end" android:id="@id/filtered_list_name" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/filtered_list_avatar" android:layout_alignTop="@id/filtered_list_avatar" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/tchap_secondary_text_color" android:ellipsize="end" android:id="@id/filtered_list_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:maxLines="1" android:layout_alignLeft="@id/filtered_list_name" android:layout_alignBottom="@id/filtered_list_avatar" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/vector_tchap_primary_color" android:ellipsize="end" android:gravity="center|right" android:id="@id/filtered_list_domain" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_toRightOf="@id/filtered_list_name" android:layout_alignTop="@id/filtered_list_name" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/filtered_list_actions_list" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/filtered_list_remove_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vector_creation_remove_user" />
+                <ImageView android:id="@id/filtered_list_edit_button" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/tchap_ic_edit_pen" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="?vctr_list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

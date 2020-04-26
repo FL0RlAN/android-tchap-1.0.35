@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/account_group">
+        <item android:id="@+id/sliding_menu_contacts" android:title="@string/tchap_burger_menu_contacts"/>
+        <item android:id="@+id/sliding_menu_public_rooms" android:title="@string/tchap_burger_menu_public_rooms"/>
+        <item android:id="@+id/sliding_menu_settings" android:title="@string/room_sliding_menu_settings"/>
+    </group>
+    <group android:id="@+id/app_group">
+        <item android:id="@+id/sliding_menu_app_tac" android:title="@string/room_sliding_menu_term_and_conditions"/>
+        <item android:id="@+id/sliding_menu_send_bug_report" android:title="@string/send_bug_report"/>
+        <item android:id="@+id/sliding_menu_sign_out" android:title="@string/action_sign_out"/>
+    </group>
+</menu>

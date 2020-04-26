@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_root" android:paddingLeft="?attr/dialogPreferredPadding" android:paddingTop="12dp" android:paddingRight="?attr/dialogPreferredPadding" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="?attr/vctr_default_text_hint_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText android:textColor="?attr/vctr_riot_primary_text_color" android:id="@+id/dialog_e2e_keys_passphrase_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/encryption_import_enter_passphrase" android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button android:textColor="?attr/vctr_primary_text_color" android:id="@+id/dialog_e2e_keys_import_button" android:background="?attr/vctr_primary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/encryption_import_import"/>
+</LinearLayout>

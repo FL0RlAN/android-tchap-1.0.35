@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lock_main_layout" android:layout_width="200.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="?vctr_riot_primary_text_color" android:id="@id/lock_screen_room_name" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+    <View android:id="@id/lock_screen_separator" android:background="@color/vector_green_color" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="?vctr_riot_primary_text_color" android:id="@id/lock_screen_sender" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?vctr_message_text_color" android:id="@id/lock_screen_body" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:textIsSelectable="false" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lock_screen_chat_send_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <EditText android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="start" android:id="@id/lock_screen_edittext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/lock_screen_hint" android:layout_weight="1.0" android:inputType="textCapSentences" />
+        <ImageButton android:textColor="@android:color/black" android:id="@id/lock_screen_sendbutton" android:background="@drawable/ic_material_send_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotationY="@integer/rtl_mirror_flip" />
+    </LinearLayout>
+</LinearLayout>

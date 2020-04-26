@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="?vctr_list_header_public_room_spinner_text_color" android:ellipsize="marquee" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif-medium" android:textAlignment="inherit" style="?android:spinnerItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

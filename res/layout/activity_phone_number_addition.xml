@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="@style/VectorToolbarStyle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/phone_number_country" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="?vctr_riot_primary_text_color" android:id="@id/phone_number_country_value" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:hint="@string/settings_phone_number_country_label" android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/phone_number_country">
+            <com.google.android.material.textfield.TextInputEditText android:textSize="16.0sp" android:textColor="?vctr_riot_primary_text_color" android:id="@id/phone_number_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_phone_number_label" android:maxLines="1" android:inputType="phone" android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ProgressBar android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </RelativeLayout>
+</LinearLayout>

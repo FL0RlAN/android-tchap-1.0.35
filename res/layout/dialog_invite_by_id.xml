@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bug_report_body_view" android:paddingLeft="?dialogPreferredPadding" android:paddingTop="12.0dip" android:paddingRight="?dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/invite_by_id_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/people_search_invite_by_id_dialog_description" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <im.vector.view.VectorAutoCompleteTextView android:id="@id/invite_by_id_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/people_search_invite_by_id_dialog_hint" android:inputType="textEmailAddress" />
+    </ScrollView>
+</LinearLayout>

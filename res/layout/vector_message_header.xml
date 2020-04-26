@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/messagesAdapter_message_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/messagesAdapter_message_header_top_margin" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <RelativeLayout android:background="?vctr_room_activity_divider_color" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="?vctr_riot_primary_text_color" android:id="@id/messagesAdapter_message_header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/messagesAdapter_message_header_bottom_margin" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+</LinearLayout>

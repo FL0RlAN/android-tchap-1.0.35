@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:paddingLeft="?dialogPreferredPadding" android:paddingTop="12.0dip" android:paddingRight="?dialogPreferredPadding" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/encryption_export_notice" />
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="?vctr_default_text_hint_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.google.android.material.textfield.TextInputEditText android:textColor="?vctr_riot_primary_text_color" android:id="@id/dialog_e2e_keys_passphrase_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/encryption_export_create_passphrase" android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="?vctr_default_text_hint_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <com.google.android.material.textfield.TextInputEditText android:textColor="?vctr_riot_primary_text_color" android:id="@id/dialog_e2e_keys_confirm_passphrase_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/encryption_export_confirm_passphrase" android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button android:textColor="?vctr_primary_text_color" android:id="@id/dialog_e2e_keys_export_button" android:background="?vctr_primary_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/encryption_export_export" />
+</LinearLayout>

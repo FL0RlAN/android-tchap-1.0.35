@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/widget_tab_bar" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/widget_back_icon" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_material_arrow_back_white" android:tint="?vctr_primary_control_color" android:rotationY="@integer/rtl_mirror_flip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/widget_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/widget_close_icon" android:layout_toRightOf="@id/widget_back_icon" android:layout_centerInParent="true" android:fontFamily="sans-serif-bold" android:layout_toStartOf="@id/widget_close_icon" android:layout_toEndOf="@id/widget_back_icon" />
+        <ImageView android:id="@id/widget_close_icon" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/vector_close_widget" android:tint="@android:color/white" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/widget_web_view" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/widget_tab_bar" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/widget_progress_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/member_details_activity_main_view" android:background="?vctr_riot_primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/room_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/room_toolbar" android:layout_width="fill_parent" android:layout_height="72.0dip" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" style="@style/TchapRoomToolbarStyle">
+            <include layout="@layout/tchap_direct_action_bar_custo_layout" />
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+    <View android:id="@id/header_bottom_separator" android:background="?room_header_divider_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/room_action_bar" android:layout_alignParentLeft="true" />
+    <im.vector.view.VectorCircularImageView android:id="@id/big_avatar_img" android:layout_width="@dimen/big_avatar_size" android:layout_height="@dimen/big_avatar_size" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_below="@id/header_bottom_separator" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="?vctr_default_text_light_color" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/member_details_presence" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:maxLines="1" android:layout_below="@id/big_avatar_img" />
+    <View android:id="@id/header_bottom_separator_2" android:background="?room_header_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/member_details_presence" android:layout_alignParentLeft="true" />
+    <ExpandableListView android:id="@id/member_details_actions_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_below="@id/header_bottom_separator_2" />
+    <include android:id="@id/devices_header_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/member_details_action_bar" layout="@layout/adapter_item_vector_recent_header" />
+    <ListView android:id="@id/member_details_devices_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_below="@id/devices_header_view" />
+    <include android:id="@id/member_details_list_view_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/progress_bar_view" />
+    <RelativeLayout android:id="@id/member_details_fullscreen_avatar_layout" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress_bar_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/member_details_fullscreen_avatar_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </RelativeLayout>
+</RelativeLayout>

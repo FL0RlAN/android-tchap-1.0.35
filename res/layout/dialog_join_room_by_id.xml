@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="?dialogPreferredPadding" android:paddingTop="12.0dip" android:paddingRight="?dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="?vctr_default_text_hint_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText android:textColor="?vctr_riot_primary_text_color" android:id="@id/join_room_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/room_recents_join_room_prompt" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

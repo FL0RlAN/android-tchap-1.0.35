@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/invite_view" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="130.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/group_desc" android:layout_width="fill_parent" android:layout_height="74.0dip">
+        <im.vector.view.VectorCircularImageView android:id="@id/room_avatar" android:layout_width="@dimen/chat_avatar_size" android:layout_height="@dimen/chat_avatar_size" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="6.0dip" android:layout_toRightOf="@id/room_avatar" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="6.0dip" android:layout_toEndOf="@id/room_avatar">
+            <TextView android:textSize="16.0sp" android:textColor="?vctr_riot_primary_text_color" android:ellipsize="end" android:id="@id/group_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/group_members_count" android:fontFamily="sans-serif-regular" android:layout_toStartOf="@id/group_members_count" />
+            <TextView android:textSize="14.0sp" android:textColor="?vctr_default_text_light_color" android:ellipsize="end" android:id="@id/group_topic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/group_name" android:layout_alignRight="@id/group_name" android:layout_alignEnd="@id/group_name" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/group_members_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minWidth="25.0dip" android:layout_alignBaseline="@id/group_name" android:layout_alignParentRight="true" android:layout_marginStart="6.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_below="@id/group_desc" android:layout_centerHorizontal="true">
+        <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/group_invite_reject_button" android:background="@color/vector_green_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="100.0dip" android:text="@string/reject" android:fontFamily="sans-serif-medium" />
+        <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/group_invite_join_button" android:background="@color/vector_green_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:minWidth="100.0dip" android:text="@string/join" android:fontFamily="sans-serif-medium" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip">
+        <im.vector.view.VectorCircularImageView android:id="@id/item_user_auto_complete_avatar" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="?vctr_default_text_dark_color" android:layout_gravity="center_vertical" android:id="@id/item_user_auto_complete_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" android:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="active_widgets">
+        <item quantity="one">%d gadget actif</item>
+        <item quantity="other">%d gadgets actifs</item>
+    </plurals>
+    <plurals name="directory_search_rooms">
+        <item quantity="one">%d salon</item>
+        <item quantity="other">%d salons</item>
+    </plurals>
+    <plurals name="directory_search_rooms_for">
+        <item quantity="one">%1$s salon trouvé pour %2$s</item>
+        <item quantity="other">%1$s salons trouvés pour %2$s</item>
+    </plurals>
+    <plurals name="format_time_d">
+        <item quantity="one">%d j</item>
+        <item quantity="other">%d j</item>
+    </plurals>
+    <plurals name="format_time_h">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="format_time_m">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="format_time_s">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="group_members">
+        <item quantity="one">%d participant</item>
+        <item quantity="other">%d participants</item>
+    </plurals>
+    <plurals name="group_rooms">
+        <item quantity="one">%d salon</item>
+        <item quantity="other">%d salons</item>
+    </plurals>
+    <plurals name="membership_changes">
+        <item quantity="one">%d changement de statut</item>
+        <item quantity="other">%d changements de statut</item>
+    </plurals>
+    <plurals name="notification_unread_notified_messages">
+        <item quantity="one">%d message notifié non lu</item>
+        <item quantity="other">%d messages notifiés non lus</item>
+    </plurals>
+    <plurals name="notification_unread_notified_messages_in_room_msgs">
+        <item quantity="one">%d message notifié non lu</item>
+        <item quantity="other">%d messages notifiés non lus</item>
+    </plurals>
+    <plurals name="notification_unread_notified_messages_in_room_rooms">
+        <item quantity="one">%d salon</item>
+        <item quantity="other">%d salons</item>
+    </plurals>
+    <plurals name="public_room_nb_users">
+        <item quantity="one">%d membre</item>
+        <item quantity="other">%d membres</item>
+    </plurals>
+    <plurals name="room_details_selected">
+        <item quantity="one">%d sélectionné</item>
+        <item quantity="other">%d sélectionnés</item>
+    </plurals>
+    <plurals name="room_displayname_three_and_more_members">
+        <item quantity="one">%1$s et 1 autre</item>
+        <item quantity="other">%1$s et %2$d autres</item>
+    </plurals>
+    <plurals name="room_header_active_members_count">
+        <item quantity="one">%d membre actif</item>
+        <item quantity="other">%d membres actifs</item>
+    </plurals>
+    <plurals name="room_new_messages_notification">
+        <item quantity="one">%d nouveau message</item>
+        <item quantity="other">%d nouveaux messages</item>
+    </plurals>
+    <plurals name="room_participants_kick_prompt_msg">
+        <item quantity="one">Voulez-vous vraiment expulser cet utilisateur de cette conversation ?</item>
+        <item quantity="other">Voulez-vous vraiment expulser ces utilisateurs de cette conversation ?</item>
+    </plurals>
+    <plurals name="room_title_members">
+        <item quantity="one">%d membre</item>
+        <item quantity="other">%d membres</item>
+    </plurals>
+    <plurals name="tchap_room_creation_retention">
+        <item quantity="one">Limiter l’historique du salon à %d jour</item>
+        <item quantity="other">Limiter l’historique du salon à %d jours</item>
+    </plurals>
+    <plurals name="tchap_room_retention_info">
+        <item quantity="one">Historique limité à %d jour</item>
+        <item quantity="other">Historique limité à %d jours</item>
+    </plurals>
+    <plurals name="tchap_room_settings_retention">
+        <item quantity="one">L’historique du salon est limité à %d jour</item>
+        <item quantity="other">L’historique du salon est limité à %d jours</item>
+    </plurals>
+    <plurals name="tchap_room_settings_retention_summary">
+        <item quantity="one">L’historique est limité à %d jour</item>
+        <item quantity="other">L’historique est limité à %d jours</item>
+    </plurals>
+    <plurals name="tchap_succes_invite_notification">
+        <item quantity="one">%d invitation a bien été envoyée.</item>
+        <item quantity="other">%d invitations ont bien été envoyées.</item>
+    </plurals>
+</resources>

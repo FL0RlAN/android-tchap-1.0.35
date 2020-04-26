@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/messagesAdapter_body_hsv" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <im.vector.view.CodeBlockNestedScrollView android:id="@id/messagesAdapter_code_scroll_view" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false">
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:autoLink="none" android:id="@id/messagesAdapter_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:fontFamily="monospace" android:layout_marginStart="4.0dip" />
+        </HorizontalScrollView>
+    </im.vector.view.CodeBlockNestedScrollView>
+</FrameLayout>

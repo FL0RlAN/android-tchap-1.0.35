@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/VectorToolbarStyle" />
+    <FrameLayout android:id="@id/media_previewer_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/media_previewer_file_name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <ImageView android:layout_gravity="center" android:id="@id/media_previewer_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+        <VideoView android:layout_gravity="center" android:id="@id/media_previewer_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/media_previewer_video_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/media_previewer_video_play" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_material_play_circle" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/media_previewer_list" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:textColor="@color/default_text_dark_color_dark" android:ellipsize="end" android:id="@id/media_previewer_file_name" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toTopOf="@id/media_previewer_list" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/media_previewer_send_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/ic_material_send_white" app:layout_constraintBottom_toTopOf="@id/media_previewer_file_name" app:layout_constraintEnd_toEndOf="@id/media_previewer_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

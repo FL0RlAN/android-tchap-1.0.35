@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/community_name" />
+    <EditText android:textColor="?vctr_riot_primary_text_color" android:textColorHint="?vctr_default_text_hint_color" android:id="@id/community_name_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="@string/community_name_hint" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/community_id" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:textSize="18.0sp" android:id="@id/community_plus_text_view" android:background="@color/vector_silver_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plus_sign" android:layout_centerVertical="true" />
+        <EditText android:textColor="?vctr_riot_primary_text_color" android:textColorHint="?vctr_default_text_hint_color" android:id="@id/community_id_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/community_id_hint" android:layout_toLeftOf="@id/community_semicolon_text_view" android:layout_toRightOf="@id/community_plus_text_view" android:layout_toStartOf="@id/community_semicolon_text_view" android:layout_toEndOf="@id/community_plus_text_view" />
+        <TextView android:textSize="18.0sp" android:id="@id/community_semicolon_text_view" android:background="@color/vector_silver_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/semicolon_sign" android:layout_toLeftOf="@id/community_hs_name_text_view" android:layout_centerVertical="true" android:layout_toStartOf="@id/community_hs_name_text_view" />
+        <TextView android:textSize="18.0sp" android:id="@id/community_hs_name_text_view" android:background="@color/vector_silver_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

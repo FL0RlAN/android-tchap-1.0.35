@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ly_invite_contacts_to_tchap" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="24.0dip">
+        <ImageView android:id="@id/icon_add_contacts_to_tchap" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/tchap_ic_add_contact" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/tchap_text_color_light" android:id="@id/tv_invite_contacts_to_tchap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="@string/tchap_invite_contacts_to_tchap" android:layout_toRightOf="@id/icon_add_contacts_to_tchap" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/encapsule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ly_invite_contacts_to_tchap">
+        <include layout="@layout/fragment_people" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/logo_tchap_color" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/tchap_primary_text_color" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:text="@string/tchap_unsupported_android_version_title" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/tchap_primary_text_color" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/tchap_unsupported_android_version_message" />
+            <Button android:textColor="@android:color/white" android:layout_gravity="end" android:id="@id/sign_out_button" android:background="@color/vector_green_color" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/action_sign_out" />
+            <Button android:textColor="@android:color/white" android:layout_gravity="end" android:id="@id/export_button" android:background="@color/vector_green_color" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/tchap_unsupported_android_version_export_keys" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/waiting_view" android:background="?vctr_waiting_background_color" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/waiting_progress" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminate="true" />
+    </FrameLayout>
+</merge>

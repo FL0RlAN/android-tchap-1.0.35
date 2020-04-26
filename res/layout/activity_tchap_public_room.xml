@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout_public_room" android:background="#ffffffff" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/home_toolbar" android:background="@drawable/tchap_search_bar_style" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="10.0dip" style="@style/VectorToolbarStyle">
+            <androidx.appcompat.widget.SearchView android:id="@id/search_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" />
+        </androidx.appcompat.widget.Toolbar>
+        <ProgressBar android:id="@id/home_recents_sync_in_progress" android:background="@color/vector_green_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@id/home_toolbar" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <im.vector.view.VectorPendingCallView android:id="@id/listView_pending_callview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/home_recents_sync_in_progress" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/home_toolbar">
+            <FrameLayout android:id="@id/fragment_container" android:background="?vctr_riot_primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/listView_spinner_views" android:background="?vctr_waiting_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_gravity="center" android:id="@id/listView_spinner" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@id/navigation_view" android:background="?vctr_riot_primary_background_color" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="fill_parent" app:headerLayout="@layout/vector_home_menu_header" app:itemIconTint="?vctr_home_navigation_icon_color" app:menu="@menu/vector_home_sliding_menu" app:theme="@style/NavigationViewStyle" />
+</androidx.drawerlayout.widget.DrawerLayout>

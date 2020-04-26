@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_icon_conversations" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="?vctr_primary_text_color" android:gravity="center" android:id="@id/tab_icon_text_conversations" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tab_rooms_title" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_icon_contacts" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="?vctr_primary_text_color" android:gravity="center" android:id="@id/tab_icon_text_contacts" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tab_contacts_title" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

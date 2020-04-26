@@ -1,0 +1,30 @@
+package me.leolin.shortcutbadger.impl;
+
+import android.content.Context;
+import android.content.Intent;
+import java.util.Arrays;
+import java.util.List;
+import me.leolin.shortcutbadger.ShortcutBadgeException;
+import me.leolin.shortcutbadger.ShortcutBadger;
+
+public class AdwHomeBadger extends ShortcutBadger {
+    public static final String COUNT = "COUNT";
+    public static final String INTENT_UPDATE_COUNTER = "org.adw.launcher.counter.SEND";
+    public static final String PACKAGENAME = "PNAME";
+
+    public AdwHomeBadger(Context context) {
+        super(context);
+    }
+
+    /* access modifiers changed from: protected */
+    public void executeBadge(int i) throws ShortcutBadgeException {
+        Intent intent = new Intent(INTENT_UPDATE_COUNTER);
+        intent.putExtra(PACKAGENAME, getContextPackageName());
+        intent.putExtra(COUNT, i);
+        this.mContext.sendBroadcast(intent);
+    }
+
+    public List<String> getSupportLaunchers() {
+        return Arrays.asList(new String[]{"org.adw.launcher", "org.adwfreak.launcher"});
+    }
+}

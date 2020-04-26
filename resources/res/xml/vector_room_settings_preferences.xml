@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fr.gouv.tchap.preference.TchapRoomAvatarPreference android:title="@string/room_settings_room_photo" android:key="roomPhotoAvatar"/>
+    <EditTextPreference android:focusable="true" android:title="@string/room_settings_room_name" android:key="roomNameEditText"/>
+    <EditTextPreference android:focusable="true" android:title="@string/room_settings_topic" android:key="roomTopicEditText"/>
+    <ListPreference android:entries="@array/notification_entries" android:title="@string/room_settings_room_notifications_title" android:key="roomNotificationPreference" android:summary="%s" android:entryValues="@array/notification_values"/>
+    <im.vector.preference.VectorCustomActionEditTextPreference android:title="@plurals/tchap_room_settings_retention" android:key="roomRetention"/>
+    <im.vector.preference.VectorCustomActionEditTextPreference android:title="@string/leave" android:key="roomLeave"/>
+    <im.vector.preference.VectorCustomActionEditTextPreference android:title="@string/tchap_room_settings_remove_from_directory" android:key="removeFromRoomsDirectory"/>
+    <im.vector.preference.VectorCustomActionEditTextPreference android:title="@string/tchap_room_settings_room_access_title" android:key="roomAccessRule" android:summary="@string/tchap_room_settings_room_access_restricted"/>
+    <im.vector.preference.VectorDividerCategory android:key="banned_divider"/>
+    <im.vector.preference.VectorPreferenceCategory android:title="@string/room_settings_banned_users_title" android:key="banned"/>
+</PreferenceScreen>

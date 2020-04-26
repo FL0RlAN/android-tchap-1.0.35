@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/read_receipt_avatars_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="9.0sp" android:gravity="center" android:id="@id/message_more_than_expected" android:layout_width="20.0dip" android:layout_height="fill_parent" />
+        <include android:id="@id/message_avatar_receipt_5" layout="@layout/vector_receipt_round_avatar" />
+        <include android:id="@id/message_avatar_receipt_4" layout="@layout/vector_receipt_round_avatar" />
+        <include android:id="@id/message_avatar_receipt_3" layout="@layout/vector_receipt_round_avatar" />
+        <include android:id="@id/message_avatar_receipt_2" layout="@layout/vector_receipt_round_avatar" />
+        <include android:id="@id/message_avatar_receipt_1" layout="@layout/vector_receipt_round_avatar" />
+    </LinearLayout>
+</RelativeLayout>

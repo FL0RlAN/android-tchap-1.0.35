@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="10.0sp" android:id="@id/media_progress_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/media_progress_view" android:layout_width="fill_parent" android:layout_height="20.0dip" android:max="100" android:progress="0" android:progressTint="@color/vector_green_color" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/media_progress_cancel" android:layout_width="40.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/vector_cancel_upload_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

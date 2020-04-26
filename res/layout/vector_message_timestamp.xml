@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="?vctr_default_text_light_color" android:id="@id/messagesAdapter_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/messagesAdapter_action_image" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/vector_actions_9b" />
+    <View android:id="@id/messagesAdapter_action_anchor" android:layout_width="1.0dip" android:layout_height="1.0dip" android:contentDescription="@string/actions" />
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="20.0dip" android:layout_height="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_address_icon_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/main_alias_icon" />
+</FrameLayout>

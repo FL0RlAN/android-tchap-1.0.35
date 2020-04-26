@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/room_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/room_toolbar" android:layout_width="fill_parent" android:layout_height="72.0dip" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" style="@style/TchapRoomToolbarStyle">
+            <include layout="@layout/tchap_direct_action_bar_custo_layout" />
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+    <View android:id="@id/header_bottom_separator" android:background="?room_header_divider_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/room_action_bar" />
+    <im.vector.view.VectorCircularImageView android:id="@id/big_avatar_img" android:layout_width="@dimen/big_avatar_size" android:layout_height="@dimen/big_avatar_size" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_below="@id/header_bottom_separator" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <View android:id="@id/header_bottom_separator_2" android:background="?room_header_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/big_avatar_img" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/tchap_text_color_light" android:ellipsize="end" android:id="@id/room_title_files" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="29.0dip" android:text="@string/room_details_files_title" android:layout_below="@id/header_bottom_separator_2" />
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/room_title_files">
+        <FrameLayout android:id="@id/room_details_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/settings_loading_layout" android:background="?vctr_waiting_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/loading_settings_progress_bar" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        </FrameLayout>
+        <ProgressBar android:id="@id/search_load_oldest_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:indeterminate="true" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

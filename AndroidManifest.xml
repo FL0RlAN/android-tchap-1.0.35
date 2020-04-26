@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:installLocation="auto" package="fr.gouv.tchap.a" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@drawable/logo_tchap_color" android:label="@string/tchap_app_name" android:largeHeap="true" android:logo="@drawable/logo_tchap_color" android:name="im.vector.VectorApp" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/AppTheme.Light" android:usesCleartextTraffic="true">
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <service android:name="im.vector.push.fcm.VectorFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="im.vector.activity.VectorUniversalLinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.dev-durable.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.dinum.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.intradef.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.diplomatie.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.justice.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.agriculture.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.interieur.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.social.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.education.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.finances.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.ssi.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.pm.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.elysee.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.culture.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="matrix.agent.collectivites.tchap.gouv.fr"/>
+                <data android:pathPrefix="/_matrix/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="@string/universal_link_supported_host"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.max_aspect" android:value="9.9"/>
+        <activity android:configChanges="orientation|screenSize" android:name="fr.gouv.tchap.activity.NotificationListenerDetectionActivity" android:theme="@style/AppTheme.NoActionBar.Swipe.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="fr.gouv.tchap.version.TchapVersionCheckActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:name="fr.gouv.tchap.activity.TchapLoginActivity" android:theme="@style/LoginAppTheme.Light" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="fr.gouv.tchap.activity.TchapUnsupportedAndroidVersionActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/tchap_room_creation_title" android:launchMode="singleTop" android:name="fr.gouv.tchap.activity.TchapRoomCreationActivity" android:parentActivityName="im.vector.activity.VectorHomeActivity" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorHomeActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/tchap_room_creation_title" android:launchMode="singleTop" android:name="fr.gouv.tchap.activity.TchapPublicRoomSelectionActivity" android:parentActivityName="im.vector.activity.VectorHomeActivity" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorHomeActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="fr.gouv.tchap.activity.AccessibilityServiceDetectionActivity" android:theme="@style/AppTheme.NoActionBar.Swipe.Dark"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_settings" android:name="im.vector.activity.SelectPictureActivity" android:theme="@style/AppTheme.NoActionBar.Swipe.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/create_account" android:name="im.vector.activity.AccountCreationActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/create_account" android:name="im.vector.activity.AccountCreationCaptchaActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/login" android:name="im.vector.activity.FallbackLoginActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.SplashActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.LoggingOutActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_home" android:name="im.vector.activity.VectorHomeActivity" android:theme="@style/HomeActivityTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_room" android:name="im.vector.activity.VectorRoomActivity" android:theme="@style/AppTheme.NoActionBar.Light" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="im.vector.activity.DeactivateAccountActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/room_creation_title" android:launchMode="singleTop" android:name="im.vector.activity.VectorRoomCreationActivity" android:parentActivityName="im.vector.activity.VectorHomeActivity" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorRoomActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/room_details_title" android:launchMode="singleTop" android:name="im.vector.activity.VectorRoomDetailsActivity" android:parentActivityName="im.vector.activity.VectorRoomActivity" android:theme="@style/AppTheme.NoActionBar.Light" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorRoomActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/room_details_title" android:launchMode="singleTop" android:name="fr.gouv.tchap.activity.TchapDirectRoomDetailsActivity" android:parentActivityName="im.vector.activity.VectorRoomActivity" android:theme="@style/AppTheme.NoActionBar.Light" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorRoomActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_settings" android:name="im.vector.activity.VectorSettingsActivity" android:parentActivityName="im.vector.activity.VectorHomeActivity" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorHomeActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_member_details" android:name="im.vector.activity.VectorMemberDetailsActivity" android:parentActivityName="im.vector.activity.VectorRoomActivity" android:theme="@style/AppTheme.NoActionBar.Light">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorRoomActivity"/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="im.vector.activity.LockScreenActivity" android:taskAffinity="" android:theme="@style/Theme.Vector.Lock.Light"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="im.vector.activity.JoinRoomActivity" android:taskAffinity="" android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:configChanges="orientation|screenSize" android:label="a filename" android:launchMode="singleTop" android:name="im.vector.activity.VectorMediasViewerActivity" android:parentActivityName="im.vector.activity.VectorRoomActivity" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorRoomActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.VectorCallViewActivity" android:theme="@style/CallActivityTheme.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.JitsiCallActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.WidgetActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.IntegrationManagerActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.StickerPickerActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/tchap_room_invite_member_title" android:launchMode="singleTop" android:name="im.vector.activity.VectorRoomInviteMembersActivity" android:parentActivityName="im.vector.activity.VectorHomeActivity" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="im.vector.activity.VectorHomeActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_bug_report" android:name="im.vector.activity.BugReportActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_group_details" android:launchMode="singleTop" android:name="im.vector.activity.VectorGroupDetailsActivity" android:theme="@style/GroupAppTheme.Light" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="im.vector.activity.VectorFakeRoomPreviewActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_add_phone_number" android:name="im.vector.activity.PhoneNumberAdditionActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_select_country" android:name="im.vector.activity.CountryPickerActivity" android:theme="@style/CountryPickerTheme.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_select_language" android:name="im.vector.activity.LanguagePickerActivity" android:theme="@style/CountryPickerTheme.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_phone_number_verification" android:name="im.vector.activity.PhoneNumberVerificationActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_notification_privacy" android:name="im.vector.activity.NotificationPrivacyActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:name="im.vector.activity.VectorWebViewActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <activity android:configChanges="orientation|screenSize" android:name="im.vector.activity.MediaPreviewerActivity" android:theme="@style/AppTheme.NoActionBar.Light"/>
+        <provider android:authorities="fr.gouv.tchap.a.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/vector_provider_paths"/>
+        </provider>
+        <receiver android:name="im.vector.receiver.VectorBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="im.vector.receiver.DismissNotificationReceiver"/>
+        <activity android:name="im.vector.activity.VectorSharedFilesActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <service android:name="im.vector.services.EventStreamService"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="fr.gouv.tchap.a.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:name="org.matrix.androidsdk.sync.EventsThread$SyncDelayReceiver"/>
+        <receiver android:exported="true" android:name="org.piwik.sdk.extra.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="fr.gouv.tchap.a.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

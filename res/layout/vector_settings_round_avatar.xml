@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="40.0dip" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <im.vector.view.VectorCircularImageView android:id="@id/avatar_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/avatar_update_progress_bar" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+</FrameLayout>

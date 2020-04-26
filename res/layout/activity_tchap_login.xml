@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Vector.ActionBarTheme.TchapLogin" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/fragment_tchap_first_register" />
+            <include layout="@layout/fragment_tchap_first_login" />
+            <include layout="@layout/fragment_tchap_first_forgotten_password" />
+            <include layout="@layout/fragment_tchap_message_button" />
+            <LinearLayout android:orientation="vertical" android:id="@id/main_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="16.0dip" />
+            <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/flow_progress_message_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/fragment_tchap_first_welcome" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/fragment_tchap_first_register_wait_for_email" />
+    <RelativeLayout android:id="@id/flow_ui_mask_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/search_progress" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

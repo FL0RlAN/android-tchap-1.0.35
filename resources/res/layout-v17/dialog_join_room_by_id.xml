@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="?attr/dialogPreferredPadding" android:paddingTop="12dp" android:paddingRight="?attr/dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?attr/dialogPreferredPadding" android:paddingEnd="?attr/dialogPreferredPadding">
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="?attr/vctr_default_text_hint_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText android:textColor="?attr/vctr_riot_primary_text_color" android:id="@+id/join_room_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/room_recents_join_room_prompt"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
